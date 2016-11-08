@@ -1,0 +1,13 @@
+{
+  "name": "botapp-debug-host",
+  "version": "1.0.0",
+  "description": "debug host for nodejs bot",
+  "main": "debug-host",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "botbuilder": "^3.4.2",
+    "restify": "^4.1.1"
+  }
+}
