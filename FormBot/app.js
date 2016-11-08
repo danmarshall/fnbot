@@ -21,7 +21,7 @@ function default_1(context, req) {
 
     bot.dialog('/', [
         function (session) {
-            builder.Prompts.text(session, "Hello... What's your name?");
+            builder.Prompts.text(session, "Hello... What's yo name?");
         },
         function (session, results) {
             session.userData.name = results.response;
@@ -29,7 +29,7 @@ function default_1(context, req) {
         },
         function (session, results) {
             session.userData.coding = results.response;
-            builder.Prompts.choice(session, "What language do you code Node using?", ["JavaScript", "CoffeeScript", "TypeScript"]);
+            builder.Prompts.choice(session, "What language do you code Node using?", ["JavaScript", "CoffeeScript", "TypeScript", "Other"]);
         },
         function (session, results) {
             session.userData.language = results.response.entity;
